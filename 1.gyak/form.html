@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Language" content="hu" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gyakorlat1</title>
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+</head>
+
+<body>
+
+<table style="width: 500px">
+    <tr>
+        <td class="fejlec">
+            <span>HTML5 urlap</span>
+        </td>
+    </tr>
+    <tr>
+        <td class="urlap" style="border-radius: 10px">
+            <form action="feldolgozo.php" method="post">
+            Név: <input type="text" name="nev" value="<?php echo $nev;?>"><br />
+            <br />
+            PIN-kód: <input type="text" name="pin" value="<?php echo $pin;?>"><br />
+            <br />
+            Kedvenc gyümölcs: <select name="gyumolcs">
+                <option value="<?php echo $gyumolcs;?>">Banán</option>
+                <option value="<?php echo $gyumolcs;?>">Körte</option>
+                <option value="<?php echo $gyumolcs;?>">Dinnye</option>
+            </select><br />
+	    <br />
+	    Életkor: <input type="number" name="eletkor" min="18" max="100" value="<?php echo $eletkor;?>"><br />
+            <br />
+	    <label for="onbizalom"></label>
+            Önbizalom: 0 <input type="range" name="onbizalom" min="0" max="100" value="<?php echo $onbizalom;?>">100<br />
+            <br />
+            <br />
+            <br />
+            <input type="submit" value="ELKÜLDÖM">
+            <input type="submit" value="Elküldöm ellenörzés nélkül"><br />
+            <br />
+            <br />
+            <br /></form>
+        </td>
+    </tr>
+</table>
+
+</body>
+
+</html>

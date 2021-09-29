@@ -1,0 +1,15 @@
+.fejlec{
+           font-size: large;
+           font-style: bold;
+           text-align: left;
+}
+
+.urlap{
+           background-color: Aqua;
+           font-size: small;
+           font-style: bold;
+           text-align: left;
+           margin-left: 20px;
+           box-shadow: 2px 2px 5px 5px black;
+           border-radius: 10px;
+}
