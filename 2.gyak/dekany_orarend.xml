@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+	<ora id="1" tipus="gyakorlat">
+		<targy>XML</targy>
+		<idopont nap="kedd" tol="12" ig="14"></idopont> 
+		<helyszin>Uni-Café</helyszin>
+		<oktato>Bednarik</oktato>
+		<szak>programtervezö informatikus</szak>
+	</ora>
+	<ora id="2" tipus="elmélet">
+		<targy>XML</targy>
+		<idopont nap="szerda" tol="10" ig="12"></idopont> 
+		<helyszin>Rockwell klub</helyszin>
+		<oktato>Bednarik</oktato>
+		<szak>programtervezö informatikus</szak>
+	</ora>
+	<ora id="3" tipus="elmélet">
+		<targy>Vállalati</targy>
+		<idopont nap="szerda" tol="16" ig="18"></idopont> 
+		<helyszin>Bolyki pince</helyszin>
+		<oktato>Sasvári</oktato>
+		<szak>programtervezö informatikus</szak>
+	</ora>
+	<ora id="4" tipus="konzultáció">
+		<targy>szakdolgozat</targy>
+		<idopont nap="hétfö" tol="8" ig="10"></idopont> 
+		<helyszin>buszmegálló</helyszin>
+		<oktato>Hornyák</oktato>
+		<szak>programtervezö informatikus</szak>
+	</ora>
+</orarend>
