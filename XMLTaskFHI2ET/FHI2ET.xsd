@@ -1,0 +1,54 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="boraszatok" type="boraszatokType"/>
+  <xs:complexType name="cimType">
+    <xs:sequence>
+      <xs:element type="xs:short" name="irszam" minOccurs="0"/>
+      <xs:element type="xs:string" name="varos"/>
+      <xs:element type="xs:short" name="Irsz" minOccurs="0"/>
+      <xs:element type="xs:byte" name="Hszam" minOccurs="0"/>
+      <xs:element type="xs:string" name="utca"/>
+      <xs:element type="xs:byte" name="hszam" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="boraszatType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:short" name="alap"/>
+      <xs:element type="cimType" name="cim"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Btkod" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="borType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:short" name="ar"/>
+      <xs:element type="xs:short" name="ev"/>
+      <xs:element type="xs:string" name="fajta"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Bkod" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="tulajdonosType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:short" name="Szid"/>
+      <xs:element type="xs:string" name="Szh"/>
+    </xs:sequence>
+    <xs:attribute type="xs:short" name="Tkod" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="vevoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:long" name="tszam"/>
+      <xs:element type="cimType" name="cim"/>
+    </xs:sequence>
+    <xs:attribute type="xs:short" name="Vkod" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="boraszatokType">
+    <xs:sequence>
+      <xs:element type="boraszatType" name="boraszat" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="borType" name="bor" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="tulajdonosType" name="tulajdonos" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="vevoType" name="vevo" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
