@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="FHI2ET.xsd" type="application/xml"
+schematypens="http://www.w3.org/2001/XMLSchema"?><boraszatok>
+    
+    <boraszat Btkod="001">
+        
+        <nev>Laboda</nev>
+        
+        <alap>9999</alap>
+        
+        <cim>
+            
+            <varos>Miskolc</varos>
+            
+            <Irsz>3515</Irsz>
+            
+            <Hszam>14</Hszam>
+            
+            <utca>Salétrom</utca>
+            
+        </cim>
+        
+    </boraszat>
+    
+    <boraszat Btkod="002">
+        
+        <nev>Uri</nev>
+        
+        <alap>9999</alap>
+        
+        <cim>
+            
+            <varos>Csemő</varos>
+            
+            <Irsz>3745</Irsz>
+            
+            <Hszam>1</Hszam>
+            
+            <utca>Vass</utca>
+            
+        </cim>
+        
+    </boraszat>
+    
+    <bor Bkod="010">
+        
+        <nev>Kóbor</nev>
+        
+        <ar>1000</ar>
+        
+        <ev>2001</ev>
+        
+        <fajta>Tablettás</fajta>
+        
+        <szarmazasi-hely>pokol-bugyra</szarmazasi-hely>
+    </bor>
+    
+    <bor Bkod="020">
+        &gt;
+
+        <nev>Dorombor</nev>
+        
+        <ar>2300</ar>
+        
+        <ev>2021</ev>
+        
+        <fajta>Irsai</fajta>
+        
+        <szarmazasi-hely>pokol-bugyra</szarmazasi-hely>
+    </bor>
+    
+    <tulajdonos Tkod="100">
+        &gt;
+
+        <nev>Laboda Dániel</nev>
+        
+        <Szh>Miskolc</Szh>
+        
+    </tulajdonos>
+    
+    <tulajdonos Tkod="200">
+        &gt;
+
+        <nev>Uri-Kovács Bence</nev>
+        
+        <Szh>Csemő</Szh>
+        
+    </tulajdonos>
+    
+    <vevo Vkod="111">
+        
+        <nev>Rőthi János</nev>
+        
+        <tszam>06209365850</tszam>
+        
+        <cim>
+            
+            <irszam>3650</irszam>
+            
+            <varos>Kurityán</varos>
+            
+            <utca>Szabad</utca>
+            
+            <hszam>11</hszam>
+            
+        </cim>
+        
+    </vevo>
+    
+    <vevo Vkod="222">
+        
+        <nev>sirnakó Boldizsár</nev>
+        
+        <tszam>06202345850</tszam>
+        
+        <cim>
+            
+            <irszam>4250</irszam>
+            
+            <varos>Szabadka</varos>
+            
+            <utca>Foglaltka</utca>
+            
+            <hszam>41</hszam>
+            
+        </cim>
+        
+    </vevo>
+    
+</boraszatok>
